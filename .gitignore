@@ -1,2 +1,8 @@
 README-initial.md
 node_modules
+/tests/Engineer.test.js
+/tests/Intern.test.js
+/tests/Manager.test.js
+/lib/Manager.js
+/lib/Intern.js
+/lib/Engineer.js
