@@ -5,59 +5,190 @@ const fs = require('fs');
 const path = require('path');
 
 // Node package Inquirer to capture user input in command line
+const inquirer = require('inquirer');
 
-const Employee = require('.lib/Employee');
-const Manager = require('.lib/Manager');
-const Engineer = require('.lib/Engineer');
-const Intern = require('.lib/Intern');
+// Include Employee, Manager, Engineer, and Intern modules
+const Employee = require('./lib/Employee');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 
-
+// Create questions object with Manager, Engineer, and Intern as keys. Each key (Manager, Engineer, and Intern) is an array with nested objects for prompt
 const questions = {
   Manager: [
     {
         type: "input",
+        message: "What is the team manager's name?",
         name: "name",
-        message: "What is the manager's name?",
-        validate: (value) => {
-            if (value) {
+        validate: (input) => {
+            if (input) {
                 return true
-            } else { return "Please enter manager's name." }
+            } else { return "Please enter a name." }
         },
     },
     {
         type: "input",
+        message: "What is the team manager's id?",
         name: "id",
-        message: "What is the manager's id?",
-        validate: (value) => {
-            if (value) {
+        validate: (input) => {
+            if (input) {
                 return true
-            } else { return "Please enter manager's id." }
+            } else { return "Please enter an id." }
         },
     },
     {
         type: "input",
+        message: "What is the team manager's email?",
         name: "email",
-        message: "What is the manager's email address?",
-        validate: (value) => {
-            if (emailValidator.validate(value)) {
+        validate: (input) => {
+            if (input) {
                 return true
-            } else { return 'Please enter a valid email address.' }
+            } else { return 'Please enter an email.' }
         },
     },
     {
         type: "input",
+        message: "What is the team manager's office number?",
         name: "officeNumber",
-        message: "What is the manager's office number?",
-        validate: (value) => {
-            if (value) {
+        validate: (input) => {
+            if (input) {
                 return true
-            } else { return "Please enter manager's office number." }
+            } else { return "Please enter a phone number." }
         },
     },
     {
-        type: "list",
-        name: "addNew",
-        message: "Do you want to add another employee",
-        choices: ["yes", "no"]
-    }
-]
+      type: "list",
+      message: "Would you like to add another team member?",
+      name: "addTeamMember",
+      choices: ["yes", "no"]
+    },
+    {
+      type: "list",
+      message: "Which type of team member would you like to add?",
+      name: "teamMember",
+      choices: ["Manager", "Engineer", "Intern"]
+    },
+  ],
+
+
+  Engineer: [
+    {
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "name",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter a name." }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the engineer's id?",
+        name: "id",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter an id." }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the engineer's email?",
+        name: "email",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return 'Please enter an email.' }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the engineer's Github username?",
+        name: "github",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter a github username." }
+        },
+    },
+    {
+      type: "list",
+      message: "Would you like to add another team member?",
+      name: "addTeamMember",
+      choices: ["yes", "no"]
+    },
+    {
+      type: "list",
+      message: "Which type of team member would you like to add?",
+      name: "teamMember",
+      choices: ["Manager", "Engineer", "Intern"]
+    },
+  ],
+
+
+  Intern: [
+    {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "name",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter a name." }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the intern's id?",
+        name: "id",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter an id." }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the intern's email?",
+        name: "email",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return 'Please enter an email.' }
+        },
+    },
+    {
+        type: "input",
+        message: "What is the intern's school name?",
+        name: "school",
+        validate: (input) => {
+            if (input) {
+                return true
+            } else { return "Please enter a school." }
+        },
+    },
+    {
+      type: "list",
+      message: "Would you like to add another team member?",
+      name: "addTeamMember",
+      choices: ["yes", "no"]
+    },
+    {
+      type: "list",
+      message: "Which type of team member would you like to add?",
+      name: "teamMember",
+      choices: ["Manager", "Engineer", "Intern"]
+    },
+  ],
+}
+
+
+
+function init() {
+  inquirer.prompt(questions.Manager)
+
+}
+
+init();
+
