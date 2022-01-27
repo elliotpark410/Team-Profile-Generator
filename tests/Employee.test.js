@@ -87,9 +87,4 @@ describe("Employee class", () => {
     // Assert
     expect(employee.getRole()).toEqual("Employee")
   })
-
-
-
-
-
 });

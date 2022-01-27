@@ -38,9 +38,4 @@ describe("Manager class", () => {
     // Assert
     expect(manager.getRole()).toEqual("Manager")
   })
-
-
-
-
-
 });
