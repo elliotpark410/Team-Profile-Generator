@@ -9,6 +9,11 @@ Create Pseudocode
 Create user story 
 Create wireframe 
 Begin Coding  
+    -do your tests first
+    -create your classes after
+    -create html and css for 5 cards
+    -look at activity 11 and 14 for TDD Practice
+    -look at activity 21 and 23 for Classes
 Practice git branching 
 Add comments and clean up code 
 Create README 

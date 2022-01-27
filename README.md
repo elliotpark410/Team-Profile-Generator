@@ -3,7 +3,7 @@
 
 A Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person
 
-OLD README. MUST UPDATE 
+OLD README. MUST UPDATE. INCLUDE INQUIRER AND JEST FOR TECHNOLOGIES USED
 
 The Professional README Generator is a command-line application that generates a professional README-generated.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). The purpose of this application is so that developers can quickly create a README for new projects. 
 <br>
