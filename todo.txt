@@ -3,8 +3,8 @@ Create git repository DONE
 Clone to local machine DONE
 Read README.md DONE
 Watch class video on 1/24/2022 at 2:21 mark DONE
-Review Activities
-    -10-OOP Activity 11, 14, 21, and 23
+Review Activities DONE
+    -10-OOP Activity 11, 14, 21, and 23 DONE
 Complete Code Drills 
 Create Pseudocode 
 Create user story 
