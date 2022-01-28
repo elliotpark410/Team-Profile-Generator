@@ -7,6 +7,9 @@ const path = require('path');
 // Node package Inquirer to capture user input in command line
 const inquirer = require('inquirer');
 
+// Export data to generateHTML.js
+const generateHTML = require('./src/generateHTML')
+
 // Include Employee, Manager, Engineer, and Intern modules
 const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
