@@ -13,6 +13,9 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+// Create empty array to include team members
+const teamArray = [];
+
 // Create questions object with Manager, Engineer, and Intern as keys. Each key (Manager, Engineer, and Intern) is an array with nested objects for prompt
 const questions = {
   Manager: [
