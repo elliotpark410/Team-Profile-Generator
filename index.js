@@ -1,14 +1,8 @@
-// Node fs (file system) module to read, create update, delete, and rename files
-const fs = require('fs');
-
-// Node path module to interact with file paths
-const path = require('path');
-
 // Node package Inquirer to capture user input in command line
 const inquirer = require('inquirer');
 
-// Export data to generateHTML.js
-const generateHTML = require('./src/generateHTML')
+
+
 
 // Include Employee, Manager, Engineer, and Intern modules
 const Employee = require('./lib/Employee');
@@ -68,12 +62,6 @@ const questions = {
       name: "addTeamMember",
       choices: ["yes", "no"]
     },
-    {
-      type: "list",
-      message: "Which type of team member would you like to add?",
-      name: "teamMember",
-      choices: ["Manager", "Engineer", "Intern"]
-    },
   ],
 
 
@@ -123,12 +111,6 @@ const questions = {
       message: "Would you like to add another team member?",
       name: "addTeamMember",
       choices: ["yes", "no"]
-    },
-    {
-      type: "list",
-      message: "Which type of team member would you like to add?",
-      name: "teamMember",
-      choices: ["Manager", "Engineer", "Intern"]
     },
   ],
 
@@ -180,21 +162,86 @@ const questions = {
       name: "addTeamMember",
       choices: ["yes", "no"]
     },
+  ],
+}
+
+
+const teamMemberType = [
     {
       type: "list",
       message: "Which type of team member would you like to add?",
       name: "teamMember",
       choices: ["Manager", "Engineer", "Intern"]
-    },
-  ],
-}
-
+    }
+];
 
 
 function init() {
-  inquirer.prompt(questions.Manager)
+  inquirer.prompt(teamMemberType)
+    .then(answer => {
+        if (answer.teamMember === 'Manager') {
+            inquirer.prompt(questions.Manager) 
+                .then(answer => {
+                    const manager = new Manager
+                        (
+                            answer.name,
+                            answer.id,
+                            answer.email,
+                            answer.officeNumber
+                        );
+                    
 
+                    teamArray.push(manager);
+                    if (answer.addTeamMember === 'yes') {
+                        init();
+                    } else {
+                        // 
+                    }
+                });
+
+            
+        } else if (answer.teamMember === 'Engineer') {
+            inquirer.prompt(questions.Engineer) 
+                .then(answer => {
+                    const engineer = new Engineer
+                        (
+                            answer.name,
+                            answer.id,
+                            answer.email,
+                            answer.officeNumber
+                        );
+                    
+
+                    teamArray.push(engineer);
+                    if (answer.addTeamMember === 'yes') {
+                        init();
+                    } else {
+                        // 
+                    }
+                })
+            
+        } else if (answer.teamMember === 'Intern') {
+            inquirer.prompt(questions.Intern) 
+                .then(answer => {
+                    const intern = new Intern
+                        (
+                            answer.name,
+                            answer.id,
+                            answer.email,
+                            answer.officeNumber
+                        );
+                    
+
+                    teamArray.push(intern);
+                    if (answer.addTeamMember === 'yes') {
+                        init();
+                    } else {
+                        // 
+                    }
+                })
+        }   
+    })
 }
 
-init();
+init()
 
