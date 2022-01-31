@@ -1,3 +1,41 @@
+function generateHTML(employeeData) {
+  employeeCardsArray = [];
+
+  for (let i = 0; i < employeeData.length; i++) {
+    const employee = employeeData[i];
+    const role = employee.getRole()
+
+
+    if (role === 'Manager') {
+      const managerCard = generateManager(employee);
+
+      employeeCardsArray.push(managerCard);      
+    }
+
+    if (role === 'Engineer') {
+      const engineerCard = generateEngineer(employee);
+
+      employeeCardsArray.push(engineerCard);      
+    }
+
+    if (role === 'Intern') {
+      const internCard = generateIntern(employee);
+
+      employeeCardsArray.push(internCard);      
+    }
+  }
+
+
+  const employeeCards = employeeCardsArray.join('');
+  console.log(employeeCards);
+
+  const generateTeam = generateTeamPage(employeeCards);
+  return generateTeam;
+}
+
+
+
+
 
 function generateManager (manager) {
   return `
@@ -56,41 +94,6 @@ function generateIntern (intern) {
       </div>
     </div>
   `;
-}
-
-
-function generateHTML(employeeData) {
-  employeeCardsArray = [];
-
-  for (let i = 0; i < employeeData.length; i++) {
-    const employee = employeeData[i];
-    const role = employee.getRole()
-
-
-    if (role === 'Manager') {
-      const managerCard = generateManager(employee);
-
-      employeeCardsArray.push(managerCard);      
-    }
-
-    if (role === 'Engineer') {
-      const engineerCard = generateManager(employee);
-
-      employeeCardsArray.push(engineerCard);      
-    }
-
-    if (role === 'Intern') {
-      const internCard = generateManager(employee);
-
-      employeeCardsArray.push(internCard);      
-    }
-  }
-
-
-  const employeeCards = employeeCardsArray.join('');
-
-  const generateTeam = generateTeamPage(employeeCards);
-  return generateTeam;
 }
 
 

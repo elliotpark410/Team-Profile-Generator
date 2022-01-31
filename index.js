@@ -1,14 +1,18 @@
 // Node package Inquirer to capture user input in command line
 const inquirer = require('inquirer');
 
+// Node package for reading and writing files
+const fs = require('fs');
 
+// Export generateHTML.js to create cards with input from inquirer prompt
+const generateHTML = require('./src/generateHTML');
 
-
-// Include Employee, Manager, Engineer, and Intern modules
-const Employee = require('./lib/Employee');
+// Include Manager, Engineer, and Intern modules
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+
+
 
 // Create empty array to include team members
 const teamArray = [];
@@ -195,7 +199,7 @@ function init() {
                     if (answer.addTeamMember === 'yes') {
                         init();
                     } else {
-                        // 
+                        generateCard(teamArray);
                     }
                 });
 
@@ -208,7 +212,7 @@ function init() {
                             answer.name,
                             answer.id,
                             answer.email,
-                            answer.officeNumber
+                            answer.github
                         );
                     
 
@@ -216,7 +220,7 @@ function init() {
                     if (answer.addTeamMember === 'yes') {
                         init();
                     } else {
-                        // 
+                        generateCard(teamArray);
                     }
                 })
             
@@ -228,7 +232,7 @@ function init() {
                             answer.name,
                             answer.id,
                             answer.email,
-                            answer.officeNumber
+                            answer.school
                         );
                     
 
@@ -236,12 +240,41 @@ function init() {
                     if (answer.addTeamMember === 'yes') {
                         init();
                     } else {
-                        // 
+                        generateCard(teamArray);
                     }
                 })
         }   
     })
+
+    
 }
 
+
+
 init()
+
+
+
+
+function generateCard(teamArray) {
+    // generate => string
+    // take tstring and pass it to writeFile
+    writeToFile(generateHTML(teamArray));
+    // take return string
+    // create file
+    // writeToFile
+}
+
+
+
+function writeToFile(employeeData) {
+    fs.writeFile('./dist/index.html', employeeData, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Your team profile has been created")
+        }
+    })
+}
 

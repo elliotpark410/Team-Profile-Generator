@@ -1,109 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Add CDN links for bootstrap, jQuery, and fontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <!-- Add CDN links for bootstrap, jQuery, and fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  
+    <!-- Add link to style.css -->
+    <link rel="stylesheet" href="style.css">
+  
+  
+    <title>Team Profile Generator</title>
+  </head>
+  
+  
+  <body>
+  
+    <!-- Create header section and create container fluid expands the container to fill the available width -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-12 jumbotron mb-3 bg-primary text-white">
+            <h1 class="text-center">My Team</h1>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Create main section with cards -->
+    <main class="container document-body">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center mt-4">
+              
+            
+    <div class="card mx-4 mb-4" id="manager-card">
+      <div class="card-header text-center card-title bg-info text-white">
+        <h3>jordan</h3>
+        <h4><i class="fas fa-mug-hot mr-2"></i>Manager</h4>
+      </div>
 
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-  <!-- Add link to style.css -->
-  <link rel="stylesheet" href="style.css">
-
-
-  <title>Team Profile Generator</title>
-</head>
-
-
-<body>
-
-  <!-- Create header section and create container fluid expands the container to fill the available width -->
-  <header class="container-fluid">
-    <div class="row">
-      <div class="col-12 jumbotron mb-3 bg-primary text-white">
-          <h1 class="text-center">My Team</h1>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">ID: 1</li>
+          <li class="list-group-item">Email: <a href="mailto:jmau@gmail.com">jmau@gmail.com</a></li>
+          <li class="list-group-item">Office number: <a href="tel:949">949</a></li>
+        </ul>
       </div>
     </div>
-  </header>
-
-  <!-- Create main section with cards -->
-  <main class="container document-body">
-    <div class="row">
-        <div class="col-12 d-flex justify-content-center mt-4">
-            
-          <!-- Create manager's card -->
-          <div class="card mx-4 mb-4" id="manager-card">
-            <div class="card-header text-center card-title bg-info text-white">
-              <h3>Manager Name</h3>
-              <h4><i class="fas fa-mug-hot mr-2"></i>Manager</h4>
-            </div>
-
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item">ID: 1</li>
-                <li class="list-group-item">Email: <a href="mailto:manager@email.com">manager@email.com</a></li>
-                <li class="list-group-item">Office number: <a href="tel:123-456-7890">123-456-7890</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-          <!-- Create engineer's card -->
-          <div class="card mx-4 mb-4" id="engineer-card">
-            <div class="card-header text-center card-title bg-info text-white">
-              <h3>Engineer Name</h3>
-              <h4><i class="fas fa-glasses mr-2"></i>Engineer</h4>
-            </div>
-
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item">ID: 2</li>
-                <li class="list-group-item">Email: <a href="mailto:engineer@email.com">engineer@email.com</a></li>
-                <li class="list-group-item">GitHub: <a href="https://github.com/username">username</a></li>
-              </ul>
-            </div>
-          </div>
-
-          
-          <!-- Create intern's card -->
-          <div class="card mx-4 mb-4" id="intern-card">
-            <div class="card-header text-center card-title bg-info text-white">
-                <h3>Intern Name</h3>
-                <h4><i class="fas fa-user-graduate mr-2"></i>Intern</h4>
-            </div>
-
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item">ID: 3</li>
-                <li class="list-group-item">Email: <a href="mailto:intern@email.com">intern@email.com</a></li>
-                <li class="list-group-item">School: schoolName</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-    </div>
-  </main>
-
-
-  <!-- Add script links for bootstrap, jQuery, and fontAwesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-  <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
-
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-
-  <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
   
-</body>
-</html>
+  
+          </div>
+      </div>
+    </main>
+  
+  
+    <!-- Add script links for bootstrap, jQuery, and fontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
+  
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
+    
+  </body>
+  </html>  
+  
