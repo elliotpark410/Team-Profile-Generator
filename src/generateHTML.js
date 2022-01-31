@@ -1,3 +1,4 @@
+// Create function to dynamically generateHTML 
 function generateHTML(employeeData) {
   employeeCardsArray = [];
 
