@@ -1,55 +1,53 @@
 # Team-Profile-Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Top Language](https://img.shields.io/github/languages/top/elliotpark410/Team-Profile-Generator)
 
 
-A Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person
+The Team Profile Generator is a command-line application that takes in information about employees on a software engineering team, then generates an index.html webpage that displays summaries for each person. The index.html is dynamically generated with user input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Test-driven development done with [Jest package](https://www.npmjs.com/package/jest). The purpose of this application is so that developers can quickly create an engineering team summary for new projects. 
 
-OLD README. MUST UPDATE. INCLUDE INQUIRER AND JEST FOR TECHNOLOGIES USED
-
-The Professional README Generator is a command-line application that generates a professional README-generated.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). The purpose of this application is so that developers can quickly create a README for new projects. 
-<br>
 <br>
 
 
 ## Links
 
-Deployed Application 
-> [https://elliotpark410.github.io/Team-Profile-Generator/](#)
-<br>
-
-<br>
+<!-- Deployed Link
+> [https://elliotpark410.github.io/Team-Profile-Generator/](https://elliotpark410.github.io/Team-Profile-Generator/)
+<br> -->
 
 Github Repository
-> [https://github.com/elliotpark410/Team-Profile-Generator](#)
-
+> [https://github.com/elliotpark410/Team-Profile-Generator](https://github.com/elliotpark410/Team-Profile-Generator)
 
 <br>
+
 
 ## Table of Contents
+  * [Getting-Started](#getting-started)
   * [Installation](#installation)
-  * [Usage Information](#usage-information)
-  * [Contribution Guidelines](#contribution-guidelines)
-  * [Test Instructions](#test-instructions)
+  * [Test-Instructions](#test-instructions)
+  * [Technologies-Used](#technologies-used)
+  * [Contribution-Guidelines](#contribution-guidelines)
+  * [Cloning-Guidelines](#cloning-guidelines)
+  * [Screenshots](#screenshots)
+  * [GIF-of-Application](#gif-of-application)
+  * [Code-Snippets](#code-snippets)
+  * [Learning-Points](#learning-points)
+  * [Authors](#authors)
+  * [License-and-Acknowledgements](#license-and-acknowledgements)
   * [Questions](#questions)
-  * ADD MORE SECTION TITLES HERE!!!!
+
 <br>
-<br>
 
 
-## Getting Started
+## Getting-Started
 
-The application will be invoked by using the following command:
+To begin the application, use the following in command line:
 
 ```bash
 node index.js
 ```
-
 <br>
 
 
-
-## Prerequisites
+## Installation
 
 1. You will need to install Node.js on your local machine. Here is a link below:
 
@@ -75,36 +73,63 @@ node index.js
 
 <br>
 
+5. Additionally, if you would like to run tests, you have to install Jest.js which is one of the many node packages. In command line, you can enter:
 
-## Installation
-Requires node.js and npm inquirer
-
-<br>
-
-## Usage-Information
-Unlimited usage
+>npm install jest
 
 <br>
 
-## Contribution-Guidelines
-Anyone can contribute
 
-<br>
+<!-- ## Prerequisites
+Requires node.js, npm inquirer, and npm jest (optional)
+
+<br> -->
+
 
 ## Test-Instructions
-Must be able to preview README.md 
+
+To test with jest (optional), use the following in command line:
+```bash
+npm run test 
+```
 
 <br>
 
-## Cloning Guidelines
 
-To install this code, use Github's guidlines to clone the repository
+## Technologies-Used
+
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Node.js](https://nodejs.org/en/)
+* [npm Inquirer](https://www.npmjs.com/package/inquirer)
+
+<br>
+
+
+## Contribution-Guidelines
+To contribute, please follow these steps:
+
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
+
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+<br>
+
+
+## Cloning-Guidelines
+
+To install this code, please use [Github's guidlines to clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
 <br>
 
 Github repository:
->https://github.com/elliotpark410/Professional-README-Generator
+>https://github.com/elliotpark410/Team-Profile-Generator
 
 <br>
+
 
 ## Screenshots 
 
@@ -131,14 +156,15 @@ Screenshot of README created (part 3)
 <br>
 
 
-## GIF of Application
+## GIF-of-Application
 
 <img src="images\README Generator.gif" title="README generator" width = 700px>
 
 <br>
 <br>
 
-## Code Snippets
+
+## Code-Snippets
 
 This code snippet shows how you can create an HTML content using jQuery and CSS Bootstrap
 
@@ -168,7 +194,8 @@ $("#five-day-forecast").append(fiveDayForecastCard);
 
  <br>
 
-## Learning Points
+
+## Learning-Points
 
 * How to use jQuery API, and Bootstrap API
 
@@ -180,35 +207,28 @@ $("#five-day-forecast").append(fiveDayForecastCard);
 
 <br>
 
-## Technologies Used
-
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [Node.js](https://nodejs.org/en/)
-* [npm Inquirer](https://www.npmjs.com/package/inquirer)
-
-<br>
 
 ## Authors
  **1. Elliot Park** 
 
-[Github Profile](https://github.com/elliotpark410)
+[https://github.com/elliotpark410](https://github.com/elliotpark410)
 <br>
 
-[LinkedIn Profile](https://www.linkedin.com/in/elliot-park/)
+[https://www.linkedin.com/in/elliot-park/](https://www.linkedin.com/in/elliot-park/)
 
 <br>
 
-## License
+
+## License-and-Acknowledgements
 
 This project is licensed under the MIT license via UC Berkeley's Extension Program
 
 <br>
 
-## Acknowledgments
-
-Thank you to Jerome Chenette, Manuel Nunes, and Hannah Folk for their help!
+Additionally, big thank you to Jerome Chenette, Manuel Nunes, Vince Lee, and Hannah Folk for their support and guidance!
 
 <br>
+
 
 ## Questions
 If you'd like to learn more about this application, check out my Github profile: [https://github.com/elliotpark410](https://github.com/elliotpark410)
@@ -217,9 +237,7 @@ If you'd like to learn more about this application, check out my Github profile:
 
 If you have any questions, please don't hesitate to email me at [elliotpark410@gmail.com](mailto:elliotpark410@gmail.com).
 
-
 <br>
-
 Copyright (c) 2022 Elliot Park
 
 

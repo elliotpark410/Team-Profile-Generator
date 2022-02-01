@@ -9,13 +9,13 @@ Complete Code Drills
 Create Pseudocode 
 Create user story 
 Create wireframe 
-Begin Coding  
-    -do your tests first
-    -create your classes after
-    -create html and css for 5 cards
-    -promopt should add manager first
+Begin Coding DONE
+    -do your tests first DONE
+    -create your classes after DONE
+    -create html and css for 5 cards DONE
+    -promopt should add manager first DONE
 Practice git branching 
-Add comments and clean up code 
+Add comments and clean up code DONE
 Create README 
     -include screenshots
     -include GIF
