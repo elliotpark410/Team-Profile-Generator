@@ -37,7 +37,7 @@ Github Repository
   * [Learning-Points](#learning-points)
   * [Authors](#authors)
   * [License-and-Acknowledgements](#license-and-acknowledgements)
-  * [Questions](#questions)
+  * [Contact](#Contact)
 
 <br>
 
@@ -103,9 +103,12 @@ npm run test
 
 ## Technologies-Used
 
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [Bootstrap CSS](https://getbootstrap.com/)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Node.js](https://nodejs.org/en/)
 * [npm Inquirer](https://www.npmjs.com/package/inquirer)
+* [npm Inquirer](https://www.npmjs.com/package/jest)
 
 <br>
 
@@ -139,23 +142,18 @@ Github repository:
 ## Screenshots 
 
 <br>
-Screenshot of command line after running "node index.js"
-<img src="images\index.js screenshot.png" title="node index.js screenshot" width = 700px>
+Screenshot of jest in command line after running "npm run test" for test-driven development
+<img src="Images\Jest TDD Success screenshot.png" title="Jest Test-Driven Development Success screenshot" width = 700px>
 
 <br>
 <br>
-Screenshot of README created (part 1)
-<img src="images\1. README screenshot.png" title="README screenshot 1" width = 700px>
+Screenshot of inquirer in command line after running "node index.js" to begin application
+<img src="Images\Inquirer Command Line Prompt screenshot.png" title="Inquirer Command Line Prompt screenshot" width = 700px>
 
 <br>
 <br>
-Screenshot of README created (part 2)
-<img src="images\2. README screenshot.png" title="README screenshot 2" width = 700px>
-
-<br>
-<br>
-Screenshot of README created (part 3)
-<img src="images\3. README screenshot.png" title="README screenshot 3" width = 700px>
+Screenshot of dynamically generated index.html
+<img src="Images\Generated HTML Team Page screenshot.png" title="Dynamically Generated HTML Team Page screenshot" width = 700px>
 
 <br>
 <br>
@@ -175,29 +173,30 @@ Link to GIF of Application
 
 ## Code-Snippets
 
-This code snippet shows how you can create an HTML content using jQuery and CSS Bootstrap
+This code snippet shows how you can create dynamically generated HTML content and file using npm Inquirer
 
-* jQuery allows user to dynamically generate HTML code within JavaScript with $(`EnterHTMLContentHere`);
+* function writeToFile(employeeData) utilizes a node module called "fs", i.e. file system, which allows us to access physical file systems. "fs.writeFile()" method is used to asynchonously write specified data to a file
 
-* Bootstrap CSS has pre-built cards with CSS styling that you can grab from their website
+* function writeToFile(employeeData) creates a file "./dist/index.html" and writes data "employeeData which is dynamically generated HTML using generateHTML.js and teamArray"
 
+* If there is an error during the file writing process, then it will console the error. If there is no error, then it will console "Your team profile has been created"
 
 ```
 
-var fiveDayForecastCard = $(`
-    <div class="pl-3">
-        <div class="card pl-3 pt-3 mb-3 bg-primary text-light" style="width: 12rem;>
-            <div class="card-body">
-                <h5>${dateFiveDayForecast}</h5>
-                <p>${iconURLFiveDayForecast}</p>
-                <p>Temperature: ${cityWeatherFiveDayForecast.temperature} °F</p>
-                <p>Humidity: ${cityWeatherFiveDayForecast.humidity}\%</p>
-            </div>
-        </div>
-    <div>
-`);
+function generateCard(teamArray) {
+  writeToFile(generateHTML(teamArray));
+}
 
-$("#five-day-forecast").append(fiveDayForecastCard);
+function writeToFile(employeeData) {
+  fs.writeFile("./dist/index.html", employeeData, (err) => {
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      console.log("Your team profile has been created");
+    }
+  });
+}
 
 ```
 
@@ -206,13 +205,16 @@ $("#five-day-forecast").append(fiveDayForecastCard);
 
 ## Learning-Points
 
-* How to use jQuery API, and Bootstrap API
+* How to do test-driven development with npm Jest.js
 
-* How to fetch and parse data from OpenWeather API
+* How to create command line prompts with npm Inquirer.js
 
-* How to create dynamically generated HTML content in JavaScript with jQuery
+* How to create files of dynamically generated HTML content with fs.writeFile() method
 
-* How to persist data with local storage
+* How to create a new instance of an object using Object Oriented Programming e.g. 
+```
+const John = new Student('John', 'Appleseed', '30');
+```
 
 <br>
 
@@ -234,12 +236,12 @@ This project is licensed under the MIT license via UC Berkeley's Extension Progr
 
 <br>
 
-Additionally, big thank you to Jerome Chenette, Manuel Nunes, Vince Lee, and Hannah Folk for their support and guidance!
+Big acknowledgements and thank you to Jerome Chenette, Manuel Nunes, Vince Lee, and Hannah Folk for their support and guidance!
 
 <br>
 
 
-## Questions
+## Contact
 If you'd like to learn more about this application, check out my Github profile: [https://github.com/elliotpark410](https://github.com/elliotpark410)
 
 <br>
