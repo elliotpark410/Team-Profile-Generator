@@ -13,6 +13,11 @@ The Team Profile Generator is a command-line application that takes in informati
 > [https://elliotpark410.github.io/Team-Profile-Generator/](https://elliotpark410.github.io/Team-Profile-Generator/)
 <br> -->
 
+Link to GIF of Application
+> [https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
+<br>
+
+
 Github Repository
 > [https://github.com/elliotpark410/Team-Profile-Generator](https://github.com/elliotpark410/Team-Profile-Generator)
 
@@ -158,11 +163,15 @@ Screenshot of README created (part 3)
 
 ## GIF-of-Application
 
-<img src="images\README Generator.gif" title="README generator" width = 700px>
+<img src="Images\Team Profile Generator.gif" title="README generator" width = 500px>
 
 <br>
+
+Link to GIF of Application
+> [https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
 <br>
 
+<br>
 
 ## Code-Snippets
 
@@ -235,7 +244,7 @@ If you'd like to learn more about this application, check out my Github profile:
 
 <br>
 
-If you have any questions, please don't hesitate to email me at [elliotpark410@gmail.com](mailto:elliotpark410@gmail.com).
+If you have any questions, please don't hesitate to email me at [elliotpark410@gmail.com](mailto:elliotpark410@gmail.com)
 
 <br>
 Copyright (c) 2022 Elliot Park
