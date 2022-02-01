@@ -9,9 +9,9 @@ The Team Profile Generator is a command-line application that takes in informati
 
 ## Links
 
-<!-- Deployed Link
+Deployed Sample HTML
 > [https://elliotpark410.github.io/Team-Profile-Generator/](https://elliotpark410.github.io/Team-Profile-Generator/)
-<br> -->
+<br>
 
 Link to GIF of Application
 > [https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
