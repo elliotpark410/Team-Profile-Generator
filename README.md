@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-The Team Profile Generator is a command-line application that takes in information about employees on a software engineering team, then generates an index.html webpage that displays summaries for each person. The index.html is dynamically generated with user input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Test-driven development done with [Jest package](https://www.npmjs.com/package/jest). The purpose of this application is so that developers can quickly create an engineering team summary for new projects. 
+The Team Profile Generator is a command-line application that takes in information about employees on a software engineering team, then generates an index.html webpage that displays summaries for each person. The index.html is dynamically generated with user input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Test-driven development is done with [Jest package](https://www.npmjs.com/package/jest). The purpose of this application is so that developers can quickly create an engineering team summary for new projects. 
 
 <br>
 
@@ -54,7 +54,7 @@ node index.js
 
 ## Installation
 
-1. You will need to install Node.js on your local machine. Here is a link below:
+1. You will need to install Node.js. Here is a link below:
 
 >https://nodejs.org/en/download/
 
@@ -173,7 +173,7 @@ Link to GIF of Application
 
 ## Code-Snippets
 
-This code snippet shows how you can create dynamically generated HTML content and file using npm Inquirer
+This code snippet shows how you can create dynamically generated HTML file using node.js
 
 * function writeToFile(employeeData) utilizes a node module called "fs", i.e. file system, which allows us to access physical file systems. "fs.writeFile()" method is used to asynchonously write specified data to a file
 
