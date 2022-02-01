@@ -20,6 +20,6 @@ Create README DONE
     -include screenshots DONE
     -include GIF DONE
 Review grading criteria DONE
-Submit to BCS (link to Github repo and screencastify video)
+Submit to BCS (link to Github repo and screencastify video) DONE
 
 
