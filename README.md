@@ -6,43 +6,26 @@ The Team Profile Generator is a command-line application that takes in informati
 
 <br>
 
-
-## Links
-
 Deployed Sample HTML
 > [https://elliotpark410.github.io/Team-Profile-Generator/](https://elliotpark410.github.io/Team-Profile-Generator/)
 <br>
 
-Link to GIF of Application
-> [https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
-<br>
-
-
-Github Repository
-> [https://github.com/elliotpark410/Team-Profile-Generator](https://github.com/elliotpark410/Team-Profile-Generator)
-
-<br>
 
 
 ## Table of Contents
-  * [Getting-Started](#getting-started)
+  * [Getting Started](#getting-started)
   * [Installation](#installation)
-  * [Test-Instructions](#test-instructions)
-  * [Technologies-Used](#technologies-used)
-  * [Contribution-Guidelines](#contribution-guidelines)
-  * [Cloning-Guidelines](#cloning-guidelines)
+  * [Test Instructions](#test-instructions)
+  * [Technologies Used](#technologies-used)
   * [Screenshots](#screenshots)
-  * [GIF-of-Application](#gif-of-application)
-  * [Code-Snippets](#code-snippets)
-  * [Learning-Points](#learning-points)
-  * [Authors](#authors)
-  * [License-and-Acknowledgements](#license-and-acknowledgements)
-  * [Contact](#Contact)
+  * [GIF of Application](#gif-of-application)
+  * [Code Snippets](#code-snippets)
+  * [Learning Points](#learning-points)
 
 <br>
 
 
-## Getting-Started
+## Getting Started
 
 To begin the application, use the following in command line:
 
@@ -54,46 +37,30 @@ node index.js
 
 ## Installation
 
-1. You will need to install Node.js. Here is a link below:
-
->https://nodejs.org/en/download/
+1. [Download Node.js](https://nodejs.org/en/download/)
 
 <br>
 
-2. Once you have downloaded Node.js, you will want to download node package manager (npm). In command line, you can enter:
+2. Install node package manager (npm)
 
->npm install -g npm
-
-<br>
-
-3. After installing npm, you have to initialize npm. In command line, you can enter:
-
->npm init -y
+`
+npm install -g npm
+`
 
 <br>
 
-4. Now you have to install Inquirer.js which is one of the many node packages. In command line, you can enter:
+3. install dependencies inquirer and jest
 
->npm install inquirer
-
-<br>
-
-5. Additionally, if you would like to run tests, you have to install Jest.js which is one of the many node packages. In command line, you can enter:
-
->npm install jest
+`
+npm install inquirer
+`
 
 <br>
 
 
-<!-- ## Prerequisites
-Requires node.js, npm inquirer, and npm jest (optional)
+## Test Instructions
 
-<br> -->
-
-
-## Test-Instructions
-
-To test with jest (optional), use the following in command line:
+To test with jest (optional)
 ```bash
 npm run test 
 ```
@@ -101,7 +68,7 @@ npm run test
 <br>
 
 
-## Technologies-Used
+## Technologies Used
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [Bootstrap CSS](https://getbootstrap.com/)
@@ -111,33 +78,6 @@ npm run test
 * [npm Inquirer](https://www.npmjs.com/package/jest)
 
 <br>
-
-
-## Contribution-Guidelines
-To contribute, please follow these steps:
-
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
-
-Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-<br>
-
-
-## Cloning-Guidelines
-
-To install this code, please use [Github's guidlines to clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-
-<br>
-
-Github repository:
->https://github.com/elliotpark410/Team-Profile-Generator
-
-<br>
-
 
 ## Screenshots 
 
@@ -159,19 +99,15 @@ Screenshot of dynamically generated index.html
 <br>
 
 
-## GIF-of-Application
+## GIF of Application
 
-<img src="Images\Team Profile Generator.gif" title="README generator" width = 500px>
+<img src="Images\Team Profile Generator.gif" title="Team Profile Generator" width = 500px>
 
-<br>
-
-Link to GIF of Application
-> [https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
-<br>
+[GIF of Application](https://drive.google.com/file/d/1kdESWAR1hzb1fa7N0LL4Lrgjwg3YPNjN/view)
 
 <br>
 
-## Code-Snippets
+## Code Snippets
 
 This code snippet shows how you can create dynamically generated HTML file using node.js
 
@@ -203,7 +139,7 @@ function writeToFile(employeeData) {
  <br>
 
 
-## Learning-Points
+## Learning Points
 
 * How to do test-driven development with npm Jest.js
 
@@ -219,37 +155,20 @@ const John = new Student('John', 'Appleseed', '30');
 <br>
 
 
-## Authors
+## Author
  **1. Elliot Park** 
 
-[https://github.com/elliotpark410](https://github.com/elliotpark410)
-<br>
-
-[https://www.linkedin.com/in/elliot-park/](https://www.linkedin.com/in/elliot-park/)
+[github](https://github.com/elliotpark410)
 
 <br>
 
-
-## License-and-Acknowledgements
-
-This project is licensed under the MIT license via UC Berkeley's Extension Program
+[LinkedIn](https://www.linkedin.com/in/elliot-park/)
 
 <br>
 
-Big acknowledgements and thank you to Jerome Chenette, Manuel Nunes, Vince Lee, and Hannah Folk for their support and guidance!
+[email](mailto:elliotpark410@gmail.com)
 
 <br>
-
-
-## Contact
-If you'd like to learn more about this application, check out my Github profile: [https://github.com/elliotpark410](https://github.com/elliotpark410)
-
-<br>
-
-If you have any questions, please don't hesitate to email me at [elliotpark410@gmail.com](mailto:elliotpark410@gmail.com)
-
-<br>
-Copyright (c) 2022 Elliot Park
 
 
 
