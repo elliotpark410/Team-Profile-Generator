@@ -156,9 +156,9 @@ const John = new Student('John', 'Appleseed', '30');
 
 
 ## Author
- **1. Elliot Park** 
+ **Elliot Park** 
 
-[github](https://github.com/elliotpark410)
+[Github](https://github.com/elliotpark410)
 
 <br>
 
@@ -166,7 +166,7 @@ const John = new Student('John', 'Appleseed', '30');
 
 <br>
 
-[email](mailto:elliotpark410@gmail.com)
+[Email](mailto:elliotpark410@gmail.com)
 
 <br>
 
